@@ -462,7 +462,7 @@ input[type=radio].visually-hidden {
   font-size: 16px;
 }
 .header__menu-link:hover {
-  color: #007bff;
+  color: #ff6b00;
 }
 @media (max-width: 992px) {
   .header__menu-link {
@@ -481,7 +481,7 @@ input[type=radio].visually-hidden {
   border-radius: 4px;
 }
 .header__menu-phone a:hover {
-  color: #007bff;
+  color: #ff6b00;
 }
 @media (max-width: 992px) {
   .header__menu-phone {

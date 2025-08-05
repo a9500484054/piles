@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+  // // Показать лоадер
+  // document.getElementById('loader').style.display = 'flex';
+
+  // Скрыть лоадер после загрузки
+  window.addEventListener('load', function() {
+    document.querySelector('.loader').style.display = 'none';
+  });
+
+
   const burger = document.querySelector('.menu-burger');
   const menu = document.querySelector('.header__menu');
   const overlay = document.createElement('div');
@@ -137,3 +147,5 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 });
+
+

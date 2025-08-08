@@ -78,4 +78,74 @@
       font-size: 28px;
     }
   }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px auto 0; // Центрирование и отступ сверху
+    max-width: 824px; // Согласовано с шириной h1
+    text-align: center; // Выравнивание по центру
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); // Для лучшей читаемости
+
+    li {
+      margin-bottom: 15px;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      color: #EBDA19; // Желтый, как в h1
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 28px;
+      transition: all 0.3s ease;
+      display: inline-block;
+      padding: 5px 10px; // Чтобы ссылка была кликабельнее
+
+      &:hover {
+        color: #ffec4e; // Более яркий желтый при наведении
+        text-shadow: 0 0 8px rgba(235, 218, 25, 0.5); // Свечение
+      }
+    }
+  }
+
+  // Адаптивность для ul
+  @media (max-width: 1200px) {
+    ul {
+      font-size: 18px;
+      
+      a {
+        font-size: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    ul {
+      max-width: 90%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    ul {
+      margin-top: 20px;
+      font-size: 16px;
+      
+      a {
+        font-size: 22px;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    ul {
+      a {
+        font-size: 20px;
+      }
+    }
+  }
 }
